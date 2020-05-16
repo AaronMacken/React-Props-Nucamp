@@ -1,24 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TitleAndText from './TitleAndText';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>My First React App</h1>
+      <hr />
+      <TitleAndText titleText="My Name is Aaron" pText="I like React!" />
+      <TitleAndText titleText="My Name is Steve" pText="I Also like React!" />
+      <TitleAndText titleText="My Name is Aaron" pText="You cant like react, I'm the only one who likes react" />
+      <TitleAndText titleText="My Name is Jeff" pText="And I like React!" />
     </div>
   );
 }
